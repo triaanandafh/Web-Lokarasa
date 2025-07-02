@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Artifika&family=Berkshire+Swash&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@200;400;500;600;700&family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 77px;
+    color: white;
+}
+.navbar h3{
+    font-size: 1.7rem;
+    color: orange;
+}
+.navbar .nav-menu ul {
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+.navbar .nav-menu ul li a{
+    /* text-decoration: none; */
+    display: flex;
+    color: #F5F5F5;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    /* overflow: hidden; */
+     font-family: 'Poppins', sans-serif;
+     position: relative;
+}
+
+.container .text{
+    position: absolute;
+    z-index: 10;
+    color: white;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    padding-left: 90px;
+}
+.container .text h1{
+    font-size: 4rem;
+    width: 70%;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+.container .text button{
+    padding: 12px 30px;
+    font-size: 1.3rem;
+    background-color: orange;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.container .text p{
+    
+}
+.container .img img{
+    object-fit: cover;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(50%);
+    /* background-color: black; */
+}
+
+
+/* MENU  */
+.menu{
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(26, 10, 10);
+    color: #F5F5F5;
+}
+.heading{
+    display: flex;
+    padding: 50px 90px;
+    justify-content: space-between;
+}
+.heading button{
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    border: none;
+    background: orange;
+    color: #F5F5F5;
+}
+.menu h2{
+    font-size: 2.3rem;
+}
+.display-menu{
+    display: flex;
+    padding-left: 90px;
+    gap: 30px;
+}
+.menu-card{
+    /* position: relative; */
+    border-radius: 10px;
+    cursor: pointer;
+}
+.image{
+    position: relative;
+    overflow: hidden;
+}
+.menu-card img{
+    width: auto;
+    height: 300px;
+    display: block;
+}
+.menu-card h3{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.menu-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.4s ease-out;
+  /* text-align: center; */
+}
+.image:hover .menu-info {
+  transform: translateY(0);
+}
