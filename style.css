@@ -69,6 +69,11 @@
     color: white;
     cursor: pointer;
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+.text button:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(255, 255, 255, 0.15);
 }
 .container .text p{
     
@@ -88,6 +93,7 @@
     height: 80vh;
     width: 100%;
     background-color: rgb(26, 10, 10);
+    /* background-color: #4F200D; */
     color: #F5F5F5;
     /* margin-top: 50px; */
 }
@@ -104,6 +110,11 @@
     border: none;
     background: orange;
     color: #F5F5F5;
+    cursor: pointer;
+}
+.heading button:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(255, 255, 255, 0.15);
 }
 .menu h2{
     font-size: 2.3rem;
@@ -138,6 +149,7 @@
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.9);
+  
   padding: 20px;
   transform: translateY(100%);
   transition: transform 0.4s ease-out;
@@ -150,6 +162,7 @@
 /* about-us */
 .about-us{
     background-color: rgb(26, 10, 10);
+    /* background-color: #4F200D; */
     color: #F5F5F5;
     padding: 80px 40px;
     display: flex;
@@ -198,4 +211,88 @@
     margin-bottom: 20px;
     max-width: 80%;
     font-size: 18px;
+}
+
+/* reason  */
+.reason{
+    background-color: rgb(26, 10, 10);
+    /* height: 80vh; */
+    padding: 0px 20px 60px 20px;
+    /* background-color: #fff; */
+    overflow: hidden;
+    text-align: center;
+}
+.reason-container{
+    margin-bottom: 50px;
+}
+.reason-container h1{
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: rgb(255, 255, 255);
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 280px;
+    background-color: rgb(114, 78, 9);
+    color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.box:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(255, 255, 255, 0.15);
+}
+.box svg{
+    width: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgb(250, 178, 43);
+    border-radius: 30px;
+}
+.box h3{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    /* color: #222; */
+}
+
+/* footer  */
+.footer{
+    background-color: orange;
+    background-color: #4F200D;
+    height: 30vh;
+    width: 100%;
+    /* color: white; */
+}
+.isi{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 120px;
+    color: white;
+}
+.isi h3{
+    margin-bottom: 15px;
+}
+.left-side {
+    overflow: hidden;
+}
+.left-side a{
+    color: white;
+    padding: 6px 11px;
+    background-color: orange;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.left-side h3{
+    color: orange;
+    font-size: 1.5rem;
 }
